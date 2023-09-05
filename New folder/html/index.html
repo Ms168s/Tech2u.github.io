@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f30f0231eb.js" crossorigin="anonymous"></script>
+    <title>Txch 2u.io</title>
+
+    <style>
+
+        body {
+            box-sizing: border-box;
+            font-family: verdana;
+            margin:0px;
+            padding:0px;
+        }
+
+        .alert , .footer_cpy {
+            margin:0px;
+            padding:0px;
+            text-align: center;
+        }
+        .alert p , .footer_cpy p{
+            background-color: yellow;
+            margin:0px;
+            padding:20px 0px;
+            font-size: 16px;
+        }
+
+        .header {
+            background-color: rgb(6, 223, 6);
+            margin:0px;
+            padding:20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin:0px;
+            padding:20px 0px 5px 0px;
+            font-size: 40px;
+        }
+        .header p {
+            margin:0px;
+            padding:5px 0px 20px 0px;
+            font-size: 15px;
+        }
+
+        .menu {
+            margin:0px;
+            padding:0px;
+            background-color: rgb(143, 199, 248);
+        }
+        .menu ul {
+            margin:0px;
+            padding:0px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            overflow: hidden;
+        }
+        .menu ul li{
+            margin:0px;
+            padding:0px;
+            list-style-type:none;
+        }
+        .menu ul li a{
+            text-decoration: none;
+            margin:15px 5px;
+            padding:10px 20px;
+            color:black;
+            font-size: 16px;
+        }
+        .menu ul li a:hover {
+            background-color: rgb(38, 153, 254);
+            border-radius: 30px;
+            color:white;
+        }
+        .menu ul li a:active{
+            background-color: rgb(90, 176, 251);
+            color:black;
+            font-size: 18px;
+        }
+
+        .body {
+            display: flex;
+            background-color: rgb(203, 231, 255);
+            margin:0px;
+            padding:0px;
+        }
+
+        .body > .left_side {
+            width:30%;
+            overflow: hidden;
+            margin:0px;
+            padding:10px;
+            text-align: left;
+        }
+        .body > .left_side > .top_side h2 {
+            text-decoration: underline;
+            margin:0px;
+            padding:20px 0px 20px 5px;
+        }
+        .body > .left_side > .top_side p{
+            font-size: 15px;
+            margin:0px;
+            padding:20px 0px 20px 5px;
+        }
+        .body > .left_side > .top_side img {
+            margin:0px;
+            padding:10px 0px;
+            width:100%;
+
+        }
+        .body > .left_side > .bottom_side p{
+            font-weight: 700;
+        }
+        .body > .left_side > .bottom_side > .bottom_side_img {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        .body > .left_side > .bottom_side > .bottom_side_img img {
+            margin:0px;
+            padding:10px 0px;
+            width:100%;
+        }
+        
+        .body > .right_side {
+            width:70%;
+            overflow: hidden;
+            margin:0px;
+            padding:10px;
+            text-align: left;
+        }
+        .body > .right_side > .para_one h2 {
+            text-decoration: underline;
+            margin:0px;
+            padding:20px 0px 20px 5px;
+        }
+        .body > .right_side > .para_one p{
+            font-size: 15px;
+            margin:0px;
+            padding:20px 0px 20px 5px;
+        }
+        .body > .right_side > .para_one img {
+            width:100%;
+        }
+
+        .footer {
+            margin:0px;
+            padding:0px;
+            background-color: rgb(143, 199, 248);
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            margin:0px;
+            padding:0px;
+        }
+
+        .footer > .size {
+            width:50%;
+            margin:0px;
+            padding:10px;
+        }
+        .footer > .contact {
+            background-color: aliceblue;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:0px;
+            padding:20px 0px;
+            overflow: hidden;
+        }
+        .footer > .contact a {
+            margin:4px;
+            padding:10px 8px;
+            text-decoration: none;
+            font-size:14px;
+            width:80%;
+            color:black;
+            overflow: hidden;
+            text-align: center;
+        }
+        .footer > .contact a:hover {
+            color:red;
+            font-size: 16px;
+        }
+        .footer > .contact a:active{
+            color:rgb(12, 155, 45);
+        }
+        .footer > .contact i {
+            margin:0px;
+            padding:0px 10px 0px 0px;
+        }
+
+        .footer > .service {
+            background-color: rgb(217, 234, 250);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin:0px;
+            padding:20px 0px;
+            overflow: hidden;
+        }
+        .footer > .service p{
+            margin:0px;
+            padding:10px 5px;
+            font-size: 14px;
+        }
+
+
+        .footer > .cpy {
+            background-color: rgb(181, 219, 252);
+            margin:0px;
+            padding:0px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="alert">
+            <p>
+                Resize the browser window to see the responsive effect.
+            </p>
+        </div>
+
+        <div class="header">
+            <h1>
+                My Website
+            </h1>
+            <p>
+                With a flexible layout.
+            </p>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="##">Services</a></li>
+                <li><a href="###">Contact</a></li>
+                <li><a href="####">About</a></li>
+            </ul>
+        </div>
+
+        <div class="body">
+            <div class="left_side">
+
+                <div class="top_side">
+
+                    <h2>
+                        About
+                    </h2>
+
+                    <p>
+                        Photo of Me : 
+                    </p>
+
+                    <img src="/img/Girl.jpg" alt="TheKingofKing" width="150px" >
+
+                    <p>
+                        This is my own picture. and this photo took in 2000
+                    </p>
+
+                </div>
+                <div class="bottom_side">
+
+                    <p>More text</p>
+
+                    <div class="bottom_side_img">
+
+                        <img src="/img/Girl.jpg" alt="TheKingofKing" width="150px" >
+
+                        <img src="/img/Girl.jpg" alt="TheKingofKing" width="150px" >
+
+                        <img src="/img/Girl.jpg" alt="TheKingofKing" width="150px" >
+                        
+                        <img src="/img/Girl.jpg" alt="TheKingofKing" width="150px" >
+
+                        <img src="/img/Girl.jpg" alt="TheKingofKing" width="150px" >
+
+                        <img src="/img/Girl.jpg" alt="TheKingofKing" width="150px" >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="right_side">
+                
+                <div class="para_one">
+                    <h2>
+                        TITLE HEADING
+                    </h2>
+    
+                    <p>Title description, Sep 05 2023</p>
+    
+                    <img src="/img/Girly.jpg" alt="Girl" width="400px">
+
+    
+                    <p>Some Text...</p>
+    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nostrum tempore perferendis nihil saepe dignissimos voluptates aspernatur, quia voluptas quos quas. Eveniet qui et magni tenetur similique natus voluptatibus, nam excepturi earum dolorem reprehenderit in maxime nemo delectus dolorum laudantium ab nulla repellat temporibus quis vero porro explicabo vel. Voluptates.</p>
+                </div>
+
+                <div class="para_one">
+                    <h2>
+                        TITLE HEADING
+                    </h2>
+    
+                    <p>Title description, Sep 05 2023</p>
+    
+                    <img src="/img/Girly.jpg" alt="Girl" width="400px">
+    
+                    <p>Some Text...</p>
+    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nostrum tempore perferendis nihil saepe dignissimos voluptates aspernatur, quia voluptas quos quas. Eveniet qui et magni tenetur similique natus voluptatibus, nam excepturi earum dolorem reprehenderit in maxime nemo delectus dolorum laudantium ab nulla repellat temporibus quis vero porro explicabo vel. Voluptates.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            <div class="size contact">
+
+                <a href="https:///www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a>
+
+                <a href="/html/Sample_Responsive_Webpage.html" target="_blank"><i class="fa-brands fa-telegram"></i>Telegram</a>
+
+                <a href="tel:010947790" target="_blank"><i class="fa-solid fa-phone"></i>Call Now</a>
+
+                <a href="https:///www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i>IG</a>
+
+            </div>
+
+            <div class="size service">
+                <p>App Developer</p>
+                <p>Web Developer</p>
+                <p>Web Design</p>
+                <p>UX/UI Design</p>
+                <p>DATA Base</p>
+            </div>
+
+        </div>
+
+        <div class="footer_cpy">
+            <p>Copyright&copy; Txch 2U</p>
+        </div>
+
+    </div>
+</body>
+</html>
